@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VARIAVEL</title>
+</head>
+<body>
+    <script>
+
+    id= prompt("id");
+    id= parseInt(id);
+    permissao();
+    function permissao( ){
+    if((id>=16)&&(id<18)){
+        document.write ("so pode votar");
+}else if(id >=18){
+    document.write("poden votar en dirigir");
+    }
+    else if (id<16){
+      document.write("nao pode votar e dirigir");  
+    }
+}
+    </script>
+</body>
+</html>

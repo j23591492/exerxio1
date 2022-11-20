@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SALARIO POR SEXO</title>
+</head>
+<body>
+    <script>
+  tm=0; tf=0;tsalariom=0;tsalariof=0;cont=0;
+  while(cont<=1){
+var nome= prompt("nome:");
+var sexo= prompt("sexo:");
+var salario= prompt("salario:")
+salario= parseFloat(salario)
+if(sexo=="m"){
+    tm=tm+1;
+    tsariom=tsalariom+ salario;
+
+} else if (sexo=="f"){
+    tf=tf +1;
+    tsalariof=tsalariof+salario;
+}
+cont++;
+  }
+document.write("total femenino"+tf+"</br>");
+document.write("total salario femenino"+tsalariof+"</br>");
+document.write("total masculino"+tm+"<br/>");
+document.write("total salario masculino"+tsalariom+"</br>");
+
+
+
+    </script>
+</body>
+</html>
